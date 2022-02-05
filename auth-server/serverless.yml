@@ -25,6 +25,11 @@ provider:
   runtime: nodejs12.x
   region: us-east-2
   timeout: 60
+  environment:
+    CLIENT_ID: ${file(config.json):CLIENT_ID}
+    CLIENT_SECRET: ${file(config.json):CLIENT_SECRET}
+    PROJECT_ID: ${file(config.json):PROJECT_ID}
+    CALENDAR_ID: ${file(config.json):CALENDAR_ID}
 
 # you can overwrite defaults here
 #  stage: dev
@@ -49,11 +54,7 @@ provider:
 #                - "/*"
 
 # you can define service wide environment variables here
-environment:
-  CLIENT_ID: ${file(config.json):CLIENT_ID}
-  CLIENT_SECRET: ${file(config.json):CLIENT_SECRET}
-  PROJECT_ID: ${file(config.json):PROJECT_ID}
-  CALENDAR_ID: ${file(config.json):CALENDAR_ID}
+
 
 # you can add packaging information here
 #package:
