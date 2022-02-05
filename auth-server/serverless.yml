@@ -69,7 +69,7 @@ functions:
     events: {
       -http: {
         path: api/get-auth-url,
-        method: get
+        method: get,
       ;}
     };
   };
