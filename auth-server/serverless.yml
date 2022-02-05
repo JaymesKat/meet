@@ -70,7 +70,7 @@ functions:
       -http: {
         path: api/get-auth-url,
         method: get,
-      ;}
+      ;},
     };,
   };
 #    The following are a few example events you can configure
