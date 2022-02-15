@@ -180,7 +180,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/auth-server/dev/1644770470599-2022-02-13T16:41:10.599Z/auth-server.zip"
+                "S3Key": "serverless/auth-server/dev/1644839577445-2022-02-14T11:52:57.445Z/auth-server.zip"
               },
               "Handler": "handler.getAuthURL",
               "Runtime": "nodejs12.x",
@@ -206,14 +206,14 @@
               "GetAuthURLLogGroup"
             ]
           },
-          "GetAuthURLLambdaVersionueMWyDEdMjmDUxZ9jrgl8RnmZPSBrRGDAGqFh3njzo": {
+          "GetAuthURLLambdaVersion8qHNzosOGPw965Xb7HslOawSnV0ENqWbSY0td3BmY": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "GetAuthURLLambdaFunction"
               },
-              "CodeSha256": "yDQUmcsqdvrjmGFWEiP3xZbEaZGWr6S3KX/XZcSwqtI="
+              "CodeSha256": "UVodswvF5UodLRdulg39ZmNrjwEEZG6THVKyZOf/LiU="
             }
           },
           "ApiGatewayRestApi": {
@@ -301,7 +301,7 @@
               "GetAuthURLLambdaPermissionApiGateway"
             ]
           },
-          "ApiGatewayDeployment1644770464371": {
+          "ApiGatewayDeployment1644839571357": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -363,7 +363,7 @@
           "GetAuthURLLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "GetAuthURLLambdaVersionueMWyDEdMjmDUxZ9jrgl8RnmZPSBrRGDAGqFh3njzo"
+              "Ref": "GetAuthURLLambdaVersion8qHNzosOGPw965Xb7HslOawSnV0ENqWbSY0td3BmY"
             },
             "Export": {
               "Name": "sls-auth-server-dev-GetAuthURLLambdaFunctionQualifiedArn"
@@ -500,7 +500,7 @@
         "timeout": 60,
         "runtime": "nodejs12.x",
         "vpc": {},
-        "versionLogicalId": "GetAuthURLLambdaVersionueMWyDEdMjmDUxZ9jrgl8RnmZPSBrRGDAGqFh3njzo"
+        "versionLogicalId": "GetAuthURLLambdaVersion8qHNzosOGPw965Xb7HslOawSnV0ENqWbSY0td3BmY"
       }
     },
     "configValidationMode": "warn",
@@ -520,7 +520,7 @@
     "artifact": "C:\\Users\\jdday\\Desktop\\meet\\auth-server\\.serverless\\auth-server.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/auth-server/dev/1644770470599-2022-02-13T16:41:10.599Z",
+    "artifactDirectoryName": "serverless/auth-server/dev/1644839577445-2022-02-14T11:52:57.445Z",
     "artifact": "auth-server.zip"
   }
 }
